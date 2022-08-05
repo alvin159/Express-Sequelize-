@@ -1,0 +1,20 @@
+-- Author: Alvin Wijaya <alvin.wijaya@tuni.fi>
+-- Date: 2022-03-31
+
+//setup: node server.js
+//HTTP GET: curl --silent --include 'http://localhost:3000/get/1'
+//HTTP POST: curl -X POST http://localhost:3000/get?"last=obama&first=mike&phone=+123+67567+216&zip=27420&city=Oulu&address=Talentie+67"
+//HTTP PATCH: curl -X PATCH http://localhost:3000/get/3?"phone=%2B465+112+212"
+
+- HTTP server: uses Express framework
+- Database: uses Sequelize framework: class Model and methods like findAll()
+- No raw SQL queries
+    - API:
+      + allows searching information (HTTP GET)
+      + allows adding information (HTTP POST)
+      + allows modifying information (HTTP UPDATE)
+- reponse: JSON data
+- Error handling
+
+
+-- End of file 
